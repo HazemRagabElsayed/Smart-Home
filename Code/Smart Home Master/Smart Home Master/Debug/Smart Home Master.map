@@ -1,0 +1,536 @@
+Archive member included because of file (symbol)
+
+c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+                              c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+                              ADC_driver.o (__do_copy_data)
+c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                              ADC_driver.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+counter             0x2               Smart Home Master.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+LOAD ADC_driver.o
+LOAD DIO.o
+LOAD EEPROM_DRIVER.o
+LOAD keypad_driver.o
+LOAD LCD.o
+LOAD LED.o
+LOAD Smart Home Master.o
+LOAD SPI_driver.o
+LOAD timer.o
+START GROUP
+LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5\libm.a
+END GROUP
+LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a
+LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5\libc.a
+LOAD c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x1b3e
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_3
+                0x0000008e                __vector_11
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_8
+                0x0000008e                __vector_14
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092       0x24 ADC_driver.o
+                0x00000092                ADC_vinit
+                0x0000009e                ADC_u16Read
+ .text          0x000000b6      0x558 DIO.o
+                0x000000b6                DIO_vsetPINDir
+                0x000001bc                DIO_write
+                0x000002c2                DIO_u8read
+                0x00000372                DIO_toggle
+                0x000003f2                DIO_set_port_direction
+                0x0000041a                DIO_write_port
+                0x00000442                DIO_read_port
+                0x0000046e                DIO_vconnectpullup
+                0x00000574                write_low_nibble
+                0x000005c0                write_high_nibble
+ .text          0x0000060e       0x1a EEPROM_DRIVER.o
+                0x0000060e                EEPROM_write
+                0x0000061e                EEPROM_read
+ .text          0x00000628      0x128 keypad_driver.o
+                0x00000628                keypad_vInit
+                0x000006a2                keypad_u8check_press
+ .text          0x00000750      0x1be LCD.o
+                0x0000077e                LCD_vSend_cmd
+                0x000007a2                LCD_vInit
+                0x00000876                LCD_vSend_char
+                0x0000089a                LCD_vSend_string
+                0x000008b8                LCD_clearscreen
+                0x000008cc                LCD_movecursor
+ .text          0x0000090e       0x24 LED.o
+                0x0000090e                LED_init
+                0x00000916                LED_on
+                0x0000091e                LED_off
+                0x00000926                LED_toggle
+                0x0000092c                LED_readstatus
+ .text          0x00000932     0x10c8 Smart Home Master.o
+                0x00000932                main
+                0x00001952                __vector_10
+ .text          0x000019fa       0x92 SPI_driver.o
+                0x000019fa                SPI_MasterInit
+                0x00001a2a                SPI_SlaveInit
+                0x00001a38                SPI_MasterTransmitchar
+                0x00001a52                SPI_SlaveReceivechar
+                0x00001a5c                SPI_MasterTransmitstring
+ .text          0x00001a8c       0xae timer.o
+                0x00001a8c                timer2_overflow_init_interrupt
+                0x00001aa8                timer_CTC_init_interrupt
+                0x00001ac8                timer_wave_nonPWM
+                0x00001ae8                timer_wave_fastPWM
+                0x00001b14                timer_wave_phasecorrectPWM
+ .text          0x00001b3a        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .text          0x00001b3a        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .text          0x00001b3a        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                0x00001b3a                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00001b3a        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00001b3a        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00001b3a        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+                0x00001b3a                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00001b3a        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+                0x00001b3a                _exit
+                0x00001b3a                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00001b3a        0x4 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00001b3e                _etext = .
+
+.data           0x00800060      0x210 load address 0x00001b3e
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ADC_driver.o
+ .data          0x00800060        0x0 DIO.o
+ .data          0x00800060        0x0 EEPROM_DRIVER.o
+ .data          0x00800060       0x10 keypad_driver.o
+ .data          0x00800070        0x0 LCD.o
+ .data          0x00800070        0x0 LED.o
+ .data          0x00800070      0x1ff Smart Home Master.o
+                0x00800265                password
+                0x00800269                triesleft
+                0x0080026a                guestflag
+                0x0080026b                adminflag
+                0x0080026c                seconddigit
+                0x0080026d                firstdigit
+                0x0080026e                selection
+ .data          0x0080026f        0x0 SPI_driver.o
+ .data          0x0080026f        0x0 timer.o
+ .data          0x0080026f        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .data          0x0080026f        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080026f        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800270                . = ALIGN (0x2)
+ *fill*         0x0080026f        0x1 00
+                0x00800270                _edata = .
+                0x00800270                PROVIDE (__data_end, .)
+
+.bss            0x00800270        0x4
+                0x00800270                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800270        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x00800270        0x0 ADC_driver.o
+ .bss           0x00800270        0x0 DIO.o
+ .bss           0x00800270        0x0 EEPROM_DRIVER.o
+ .bss           0x00800270        0x0 keypad_driver.o
+ .bss           0x00800270        0x0 LCD.o
+ .bss           0x00800270        0x0 LED.o
+ .bss           0x00800270        0x2 Smart Home Master.o
+                0x00800270                modeentered
+                0x00800271                passwordindex
+ .bss           0x00800272        0x0 SPI_driver.o
+ .bss           0x00800272        0x0 timer.o
+ .bss           0x00800272        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .bss           0x00800272        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800272        0x0 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x00800272        0x2 Smart Home Master.o
+                0x00800272                counter
+                0x00800274                PROVIDE (__bss_end, .)
+                0x00001b3e                __data_load_start = LOADADDR (.data)
+                0x00001d4e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800274        0x0
+                0x00800274                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800274                PROVIDE (__noinit_end, .)
+                0x00800274                _end = .
+                0x00800274                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x6cc
+ *(.stab)
+ .stab          0x00000000      0x6cc c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+
+.stabstr        0x00000000       0x85
+ *(.stabstr)
+ .stabstr       0x00000000       0x85 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/../../../../avr/lib/avr5/crtm32.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x180
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 ADC_driver.o
+ .debug_aranges
+                0x00000020       0x20 DIO.o
+ .debug_aranges
+                0x00000040       0x20 EEPROM_DRIVER.o
+ .debug_aranges
+                0x00000060       0x20 keypad_driver.o
+ .debug_aranges
+                0x00000080       0x20 LCD.o
+ .debug_aranges
+                0x000000a0       0x20 LED.o
+ .debug_aranges
+                0x000000c0       0x20 Smart Home Master.o
+ .debug_aranges
+                0x000000e0       0x20 SPI_driver.o
+ .debug_aranges
+                0x00000100       0x20 timer.o
+ .debug_aranges
+                0x00000120       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_aranges
+                0x00000140       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_aranges
+                0x00000160       0x20 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x2056
+ *(.debug_info)
+ .debug_info    0x00000000       0xb2 ADC_driver.o
+ .debug_info    0x000000b2      0x2dc DIO.o
+ .debug_info    0x0000038e       0xdd EEPROM_DRIVER.o
+ .debug_info    0x0000046b       0xc3 keypad_driver.o
+ .debug_info    0x0000052e      0x474 LCD.o
+ .debug_info    0x000009a2      0x145 LED.o
+ .debug_info    0x00000ae7     0x1049 Smart Home Master.o
+ .debug_info    0x00001b30      0x1bd SPI_driver.o
+ .debug_info    0x00001ced       0xd2 timer.o
+ .debug_info    0x00001dbf       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_info    0x00001e9c       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_info    0x00001f79       0xdd c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x788
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x74 ADC_driver.o
+ .debug_abbrev  0x00000074       0xcf DIO.o
+ .debug_abbrev  0x00000143       0x85 EEPROM_DRIVER.o
+ .debug_abbrev  0x000001c8       0x88 keypad_driver.o
+ .debug_abbrev  0x00000250      0x171 LCD.o
+ .debug_abbrev  0x000003c1       0x5c LED.o
+ .debug_abbrev  0x0000041d      0x1b3 Smart Home Master.o
+ .debug_abbrev  0x000005d0      0x130 SPI_driver.o
+ .debug_abbrev  0x00000700       0x4c timer.o
+ .debug_abbrev  0x0000074c       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_abbrev  0x00000760       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_abbrev  0x00000774       0x14 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+
+.debug_line     0x00000000      0xfd2
+ *(.debug_line)
+ .debug_line    0x00000000       0xe8 ADC_driver.o
+ .debug_line    0x000000e8      0x14c DIO.o
+ .debug_line    0x00000234       0xeb EEPROM_DRIVER.o
+ .debug_line    0x0000031f       0x64 keypad_driver.o
+ .debug_line    0x00000383      0x223 LCD.o
+ .debug_line    0x000005a6       0x45 LED.o
+ .debug_line    0x000005eb      0x5a3 Smart Home Master.o
+ .debug_line    0x00000b8e      0x1a4 SPI_driver.o
+ .debug_line    0x00000d32       0xf9 timer.o
+ .debug_line    0x00000e2b       0x88 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_exit.o)
+ .debug_line    0x00000eb3       0x91 c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_copy_data.o)
+ .debug_line    0x00000f44       0x8e c:/program files (x86)/atmel/atmel studio 6.0/extensions/atmel/avrgcc/3.4.1.95/avrtoolchain/bin/../lib/gcc/avr/4.6.2/avr5\libgcc.a(_clear_bss.o)
+
+.debug_frame    0x00000000      0x3b4
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x34 ADC_driver.o
+ .debug_frame   0x00000034       0xb4 DIO.o
+ .debug_frame   0x000000e8       0x34 EEPROM_DRIVER.o
+ .debug_frame   0x0000011c       0x4c keypad_driver.o
+ .debug_frame   0x00000168       0x90 LCD.o
+ .debug_frame   0x000001f8       0x64 LED.o
+ .debug_frame   0x0000025c       0x7c Smart Home Master.o
+ .debug_frame   0x000002d8       0x78 SPI_driver.o
+ .debug_frame   0x00000350       0x64 timer.o
+
+.debug_str      0x00000000      0x4f7
+ *(.debug_str)
+ .debug_str     0x00000000       0xc7 ADC_driver.o
+                                 0xfb (size before relaxing)
+ .debug_str     0x000000c7       0xf4 DIO.o
+                                0x1c0 (size before relaxing)
+ .debug_str     0x000001bb       0x3b EEPROM_DRIVER.o
+                                0x10a (size before relaxing)
+ .debug_str     0x000001f6       0x49 keypad_driver.o
+                                 0xa3 (size before relaxing)
+ .debug_str     0x0000023f       0xd0 LCD.o
+                                0x191 (size before relaxing)
+ .debug_str     0x0000030f       0x3d LED.o
+                                 0xa6 (size before relaxing)
+ .debug_str     0x0000034c       0xad Smart Home Master.o
+                                0x1f7 (size before relaxing)
+ .debug_str     0x000003f9       0x79 SPI_driver.o
+                                0x18c (size before relaxing)
+ .debug_str     0x00000472       0x85 timer.o
+                                0x13c (size before relaxing)
+
+.debug_loc      0x00000000     0x18be
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x2e ADC_driver.o
+ .debug_loc     0x0000002e      0x593 DIO.o
+ .debug_loc     0x000005c1       0x18 EEPROM_DRIVER.o
+ .debug_loc     0x000005d9      0x10e keypad_driver.o
+ .debug_loc     0x000006e7       0xef LCD.o
+ .debug_loc     0x000007d6       0xbe LED.o
+ .debug_loc     0x00000894      0xf20 Smart Home Master.o
+ .debug_loc     0x000017b4      0x10a SPI_driver.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Smart Home Master.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x18
+ .debug_ranges  0x00000000       0x18 Smart Home Master.o
