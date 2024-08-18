@@ -24,8 +24,8 @@
 <h2 align="left">
 Description:
 </h2>
+
 One of Atmega32 displays status of components (ON or OFF) and  options using LCD and receives the a selection of one of these options from Keypad then it transmits the required change command through SPI communication protocol to other Atmega32 that do this change to components connected to it
-###
 
 <h2 align="left">
 Devices used:
