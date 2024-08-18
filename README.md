@@ -60,6 +60,7 @@ notes:
 -if password is set for both modes,first login not displayed and you are asked to select that mode and enter its password
 -you can't stay in any mode more than 20 seconds, if elapsed time = 20 seconds then you enter block mode
 -in block mode if you try to turn off and turn on MC you can't skip this mode untill 20 seconds and time repeats counting from 0 seconds
+-LCD displays status of all things
 -Air conditioner can be configured to work if temperature falls below a certain value
 -if Air conditioner configured to work under certain value but not turned on then it doesn't work
 
